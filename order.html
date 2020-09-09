@@ -2,7 +2,7 @@
 <head>
     <title>order page</title>
     <link rel="shortcut icon" href="assets/wheelchair.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -10,12 +10,13 @@
 <script src="script.js"></script>
 
 <body>
+<div id="top">
 <a href="javascript:void(0);" id="ham" onclick="ope()"><img src="assets/download.png" height="inherit" width="auto"></a>
-
+</div>
 <div id="site">
+<img src="assets/logo.png" id="logo" >
 <div id="panel">
-<div id="header">
-	<img src="assets/logo.png" id="logo" >
+	<img src="assets/logo.png" id="mobile-logo" >
 
 	<div id="navbutton">
 	<a href="index.html" class="button l">Home</a>
@@ -23,16 +24,14 @@
 	<a href="order.html" class="button l">Order online</a>	
 	<a href="about.html" class="l">About us</a>
 	</div>
-</div>	
 
-<div id="order" class="contents">
-
+<div class="contents">
 	<br>
 
-	<form>
-	<label for="fname">First Name:</label><input type="text" id="fname" placeholder=". . ."><br><br>
-	<label for="lname">Last Name:</label><input type="text" id="lname" placeholder=". . ."><br><br>
-	<label for="drinks">Beverage:</label><input id="drink" list="drinks" placeholder=". . .">
+	<form id="order">
+	<label for="fname">First Name:</label><input type="text" id="fname" class="right" placeholder=". . ."><br><br>
+	<label for="lname">Last Name:</label><input type="text" id="lname" class="right" placeholder=". . ."><br><br>
+	<label for="drinks">Beverage:</label><input id="drink" list="drinks" class="right" placeholder=". . .">
         <datalist id="drinks">
     	<option value="Short Black   $2.00">
     	<option value="Macchiato   $2.00">
@@ -50,14 +49,20 @@
     	<option value="Iced Chocolate   $3.00">
     	<option value="Iced Chai   $3.00">
   	</datalist><br><br>
-	<label for="sugar">Sugar</label>
+	<label for="size" class="left">Cup</label>
+	<input type="radio" id="size" name="size"><label class="chos">Small</label>
+	<input type="radio" id="size" name="size"><label class="chos">Large</label>
+	<input type="radio" id="size" name="size"><label class="chos">Mug</label><br>
+	<input type="radio" id="size" name="size"><label class="chos">Keep cup</label><br>
+	<label for="sugar" class="left">Sugar</label>
 	<input type="radio" id="sugar" name="sugar"><label class="chos">None</label>
 	<input type="radio" id="sugar" name="sugar"><label class="chos">One</label>
 	<input type="radio" id="sugar" name="sugar"><label class="chos">Two</label><br>
-	<label for="milk">Milk</label>
+	<label for="milk" class="left">Milk</label>
 	<input type="radio" id="milk" name="milk"><label class="chos">Whole</label>
 	<input type="radio" id="milk" name="milk"><label class="chos">Trim</label>
 	<input type="radio" id="milk" name="milk"><label class="chos">Soy</label><br>
+	<input type="radio" id="milk" name="milk"><label class="chos">Cashew</label><br>
 	<br><input type="submit" value="Submit">
 	</form>
 </div>
