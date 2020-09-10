@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>order page</title>
+    <title>Order Online | A Brewed Awakening</title>
     <link rel="shortcut icon" href="assets/wheelchair.ico">
     <link rel="stylesheet" href="grid.css">
 
@@ -13,8 +13,15 @@
 <div id="top">
 <a href="javascript:void(0);" id="ham" onclick="ope()"><img src="assets/download.png" height="inherit" width="auto"></a>
 </div>
+
+<div id="order-win"><span id="close" 
+onclick="q()">x</span>
+<p class="heading" style="border: 0; margin-top: 0;" id="zxcv"></p></div>
+<div id="fade"></div>
 <div id="site">
 <img src="assets/logo.png" id="logo" >
+
+
 <div id="panel">
 	<img src="assets/logo.png" id="mobile-logo" >
 
@@ -26,50 +33,41 @@
 	</div>
 
 <div class="contents">
-	<br>
 
-	<form id="order">
-	<label for="fname">First Name:</label><input type="text" id="fname" class="right" placeholder=". . ."><br><br>
-	<label for="lname">Last Name:</label><input type="text" id="lname" class="right" placeholder=". . ."><br><br>
-	<label for="drinks">Beverage:</label><input id="drink" list="drinks" class="right" placeholder=". . .">
-        <datalist id="drinks">
-    	<option value="Short Black   $2.00">
-    	<option value="Macchiato   $2.00">
-    	<option value="Ristretto   $2.00">
-    	<option value="Long Black   $2.00">
-    	<option value="Americano   $2.00">
-    	<option value="Flat White   $2.00">
-    	<option value="Cappuccino   $2.00">
-    	<option value="Latte   $2.00">
-    	<option value="Mochaccino   $2.00">
-    	<option value="Mocha Latte   $2.00">
-    	<option value="Hot Chocolate   $2.00">
-    	<option value="Chai Latte   $2.00">
-    	<option value="Iced Coffee   $3.00">
-    	<option value="Iced Chocolate   $3.00">
-    	<option value="Iced Chai   $3.00">
-  	</datalist><br><br>
-	<label for="size" class="left">Cup</label>
-	<input type="radio" id="size" name="size"><label class="chos">Small</label>
-	<input type="radio" id="size" name="size"><label class="chos">Large</label>
-	<input type="radio" id="size" name="size"><label class="chos">Mug</label><br>
-	<input type="radio" id="size" name="size"><label class="chos">Keep cup</label><br>
-	<label for="sugar" class="left">Sugar</label>
-	<input type="radio" id="sugar" name="sugar"><label class="chos">None</label>
-	<input type="radio" id="sugar" name="sugar"><label class="chos">One</label>
-	<input type="radio" id="sugar" name="sugar"><label class="chos">Two</label><br>
-	<label for="milk" class="left">Milk</label>
-	<input type="radio" id="milk" name="milk"><label class="chos">Whole</label>
-	<input type="radio" id="milk" name="milk"><label class="chos">Trim</label>
-	<input type="radio" id="milk" name="milk"><label class="chos">Soy</label><br>
-	<input type="radio" id="milk" name="milk"><label class="chos">Cashew</label><br>
-	<br><input type="submit" value="Submit">
-	</form>
+<p class="heading">Coffee</p>
+<div id="order">
+<a href="javascript:void(0)" onclick="ord(0)"><div class="menuitem">Short Black<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(1)"><div class="menuitem">Macchiato<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(2)"><div class="menuitem">Ristretto<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(3)"><div class="menuitem">Long Black<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(4)"><div class="menuitem">Americano<x>$2</x></div></a>
 </div>
+
+<p class="heading">Coffee with milk</p>
+<div id="order">
+<a href="javascript:void(0)" onclick="ord(5)"><div class="menuitem">Flat White<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(6)"><div class="menuitem">Cappuccino<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(7)"><div class="menuitem">Latte<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(8)"><div class="menuitem">Mochaccino<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(9)"><div class="menuitem">Mocha Latte<x>$2</x></div></a>
+</div>
+
+<p class="heading">Other</p>
+<div id="order">
+<a href="javascript:void(0)" onclick="ord(10)"><div class="menuitem">Hot Chocolate<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(11)"><div class="menuitem">Chai Latte<x>$2</x></div></a>
+<a href="javascript:void(0)" onclick="ord(12)"><div class="menuitem">Iced Coffee<x>$3</x></div></a>
+<a href="javascript:void(0)" onclick="ord(13)"><div class="menuitem">Iced Chocolate<x>$3</x></div></a>
+<a href="javascript:void(0)" onclick="ord(14)"><div class="menuitem">Iced Chai<x>$3</x></div></a>
+</div>
+
+
 <br>
 <div id="foot">
-	<p>remilia scarlet and touhou project copyright ZUN 2002-2020<br>
-	artwork copyright kedama milk 2015</p>
+<img src="assets/hhs-edited.png" width="50px">
+<p>Henderson High School café / A Brewed Awakening<br>
+Website by Paul Lee</p>
+</div>
 </div>
 </div>
 </div>
