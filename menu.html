@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<script src="script.js"></script>
+<style>
+x::after{ content: " - $2";}
+y::after{ content: " - $3";}
 
+</style>
+
+<script src="script.js"></script>
 <body>
 <div id="top">
 <a href="javascript:void(0);" id="ham" onclick="ope()"><img src="assets/download.png" height="inherit" width="auto"></a>
@@ -27,30 +32,37 @@
 <div class="menu">
 <p class="heading">Coffee</p><br>
 <div id="menu-sect1" class="menu-sect">
-<div class="botan">Short Black<br>Espresso. Coffee to Shot ratio 1:2 in weight.</div>
-<div class="botan">Macchiato<br>Espresso with milk foam.</div>
-<div class="botan">Ristretto<br>Coffee shot with 1:1 ratio of coffee to shot ratio.</div>
-<div class="botan">Long Black<br>Espresso with equal part water.</div>
-<div class="botan">Americano<br>Espresso and rest of the cup filled with water.</div>
+<div class="botan">Short Black<x></x><br>Espresso. 1:2 ground coffee to extraction ratio in mass.</div>
+<div class="botan">Macchiato<x></x><br>Espresso with milk foam.</div>
+<div class="botan">Ristretto<x></x><br>Shot of 1:1 ratio of ground coffee to extraction in mass.</div>
+<div class="botan">Long Black<x></x><br>Espresso with equal part water.</div>
+<div class="botan">Americano<x></x><br>Espresso and cup filled with water. Very dilute.</div>
 </div>
 
 <p class="heading">Coffee with Milk</p><br>
 <div id="menu-sect2" class="menu-sect">
-<div class="botan">Flat White<br>Espresso with steamed milk and little foam.</div>
-<div class="botan">Cappuccino<br>Espresso with steamed milk and a lot of foam.</div>
-<div class="botan">Latte<br>Espresso with steamed milk and moderate foam.</div>
-<div class="botan">Mochaccino<br>Espresso with cocoa, steamed milk and a lot of foam.</div>
-<div class="botan">Mocha Latte<br>Espresso with cocoa, steamed milk and moderate foam.</div>
+<div class="botan">Flat White<x></x><br>Espresso with steamed milk and little foam.</div>
+<div class="botan">Cappuccino<x></x><br>Espresso with steamed milk and a lot of foam.</div>
+<div class="botan">Latte<x></x><br>Espresso with steamed milk and moderate foam.</div>
+<div class="botan">Mochaccino<x></x><br>Espresso with cocoa, steamed milk and a lot of foam.</div>
+<div class="botan">Mocha Latte<x></x><br>Espresso with cocoa, steamed milk and moderate foam.</div>
+</div>
+
+<p class="heading">Cold Beverages</p><br>
+<div id="menu-sect3" class="menu-sect">
+<div class="botan">Iced Coffee<y></y><br>Espresso, cold milk and ice.</div>
+<div class="botan">Iced Chocolate<y></y><br>Cocoa, sugar, cold milk and ice.</div>
+<div class="botan">Iced Chai<y></y><br>Chai, cold milk and ice.</div>
 </div>
 
 <p class="heading">Other</p><br>
 <div id="menu-sect3" class="menu-sect">
-<div class="botan">Hot Chocolate<br>Cocoa, sugar and steamed milk.</div>
-<div class="botan">Chai Latte<br>Latte with chai syrup in place of espresso.</div>
-<div class="botan">Iced Coffee<br>Espresso, cold milk and ice.</div>
-<div class="botan">Iced Chocolate<br>Cocoa, sugar, cold milk and ice.</div>
-<div class="botan">Iced Chai<br>Chai, cold milk and ice.</div>
+<div class="botan">Hot Chocolate<x></x><br>Cocoa, sugar and steamed milk.</div>
+<div class="botan">Chai Latte<x></x><br>Latte with chai syrup in place of espresso.</div>
 </div>
+
+
+
 </div>
 </div>
 <br>
