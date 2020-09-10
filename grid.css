@@ -179,15 +179,51 @@ body{
     cursor: pointer;
 }
 
+#slideshow{
+    width: 85vw;
+    max-width: 85vw;
+    text-align: center;
+}
+
+.slide{
+    width: inherit;
+    display: none;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.prev{
+    cursor: pointer;
+    left: 0;
+}
+
+.next{
+    cursor: pointer;
+    right: 0;
+}
+
+@keyframes fade{
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
+
+.dot{
+    cursor: pointer;
+    margin-bottom: 0;
+    background-color: #444;
+    height: 0.7em;
+    width: 0.7em;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+
 a{
     text-decoration: none;
     color: #444;
 }
 
-img{
-    max-width: 85%;
-    margin: 4vh auto 4vh auto;
-}
 
 #menu-sect1{
     grid-column: 1;
@@ -353,13 +389,14 @@ body{
 }
 
 #ham{
-    position: absolute;
-    top: 0em;
-    right: 0.5em;
+    position: relative;
+    float: right;
     height: 1.5em;
     width: 1.5em;
     display: block;
     z-index: 3;
+    margin: 0;
+    padding: 0;
 }
 
 #top{
@@ -371,7 +408,7 @@ body{
     top: 0;
     z-index: 1;
     box-shadow: 0 2px 5px 1px #eee;
-    padding: 1em;
+    padding: 0;
     transition: 0.3s;
 }
 
