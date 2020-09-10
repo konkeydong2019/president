@@ -187,7 +187,7 @@ a{
 
 img{
     max-width: 85%;
-    margin: 2vh auto 2vh auto;
+    margin: 4vh auto 4vh auto;
 }
 
 #menu-sect1{
@@ -212,8 +212,9 @@ img{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-bottom: 1em;
+    padding-bottom: 0.4em;
     border-bottom: solid #444 2px;
+    margin-bottom: 1em;
 }
  
 label{
