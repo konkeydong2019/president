@@ -1,6 +1,3 @@
-var im = 1;
-slideshow(im;
-
 function ope() {
   var x = document.getElementById("navbutton");
   var z = document.getElementById("top");
@@ -44,33 +41,4 @@ function ord(n) {
 function q(){
 document.getElementById('order-win').style.display = 'none';
 document.getElementById('fade').style.display = 'none';
-}
-
-
-
-function mv(n) {
-  slideshow(im += n);
-}
-
-function now(n) {
-  slideshow(im = n);
-}
-
-function slideshow(n) {
-  var i;
-  var slide = document.getElementsByClassName("slide");
-  var dot = document.getElementsByClassName("dot");
-
-  if (n > slide.length) {im = 1}
-  if (n < 1) {im = slide.length}
-
-  for (i = 0; i < slide.length; i++) {
-      slide[i].style.display = "none";
-  }
-
-  for (i = 0; i < dots.length; i++) {
-      dot[i].className = dot[i].className.replace(" active", "");
-  }
-  slide[im-1].style.display = "block";
-  dot[im-1].className += " active";
 }
