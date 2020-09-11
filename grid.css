@@ -352,6 +352,7 @@ body{
 }
 
 #navbutton{
+    border-radius: 0;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     align-content: start;
