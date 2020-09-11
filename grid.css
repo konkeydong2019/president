@@ -5,6 +5,7 @@
 }
 
 #site{
+    background-image: linear-gradient(360deg, #e2d9ce, #C4B49C);
     top: 0;
     left: 0;
     position: absolute;
@@ -15,7 +16,6 @@
 }
 
 body{
-    background-color: white;
     color: #444;
     font-size: 1.26em;
     padding: 1em;
@@ -32,8 +32,8 @@ body{
     padding-bottom: 0;
     height: auto;
     width: 75vw;
-    background-color: white;
-    box-shadow: 0px 0px 18px 3px #999; /*was  #261c1c*/
+    background-color: #fcfbfa;
+    box-shadow: 0px 0px 18px 3px #d0c9c0;
     border: 1px solid #eee; 
     border-radius: 4px;
 }
@@ -55,10 +55,13 @@ body{
 }
 
 #navbutton{
+    background-color: #E2D9CE;
     padding: 2px;
+    border-radius: 5px;
+    border: 1px solid #cbc3b9;
     width: 85%;
     margin: auto;
-    margin-top: 1vh;
+    margin-top: 3.5vh;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     position: relative;
@@ -98,9 +101,6 @@ body{
     animation-duration: 0.3s;
 }
     
-.button {
-    border-right: 1px solid #ddd;
-}
 
 .contents{
     display: grid;
@@ -171,7 +171,7 @@ body{
     top: 20vh;
     box-shadow: 0px 0px 18px 3px #ccc;
     position: fixed;
-    background-color: white;
+    background-color: #fcfbfa;
     padding: 1em;
     border-radius: 5px;
     width: 50%;
@@ -268,7 +268,7 @@ input[type="radio"]{
 
 input[type="submit"]{
     font-weight: bold;
-    background-color: white;
+    background-color: #fcfbfa;
     border-radius: 5px;
     border: 1px solid #ccc;
     animation-name: reverse;
@@ -346,7 +346,6 @@ body{
     padding: 3px;
     height: auto;
     width: 100vw;
-    background-color: white;
     position: absolute;
     box-shadow: 0 0 0 0;
     border-radius: 0;
@@ -359,7 +358,7 @@ body{
     position: static;
     margin: 0;
     height: 120vh;
-    background-color: white;
+    background-color: #E2D9CE;
     top: 0;
     right: 0;
     border: 0;
@@ -398,7 +397,7 @@ body{
 #top{
     width: 100%;
     height: 2em;
-    background-color: white;
+    background-color: #E2D9CE;
     opacity: 80%;
     position: fixed;
     top: 0;
