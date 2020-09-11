@@ -28,7 +28,7 @@ body{
 #panel{
     display: block;
     margin: auto;
-    padding: 3px;
+    padding: 2vh;
     padding-bottom: 0;
     height: auto;
     width: 75vw;
