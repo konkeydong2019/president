@@ -136,8 +136,15 @@ body{
 }
 
 #order{
-  display: grid;
-  justify-content: center;
+    display: grid;
+    justify-content: center;
+}
+
+#order-form{
+    height: auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
 }
 
 .menuitem{
@@ -163,13 +170,14 @@ body{
 }
 
 #order-win{
+    top: 25vh;
     box-shadow: 0px 0px 18px 3px #ccc;
     position: fixed;
     background-color: white;
     padding: 1em;
     border-radius: 5px;
     width: 50%;
-    height: 80vh;
+    height: 50vh;
     z-index: 5;
     display: none;
     opacity: 0;
@@ -180,7 +188,7 @@ body{
 
 #close{
     position: absolute;
-    top: 0.5em;
+    top: 0.7em;
     right: 1em;
     cursor: pointer;
 }
@@ -194,28 +202,6 @@ img{
 @keyframes fade{
     from {opacity: 0;}
     to {opacity: 100%;}
-}
-
-.dot{
-    cursor: pointer;
-    margin-bottom: 0;
-    background-color: #ccc;
-    height: 0.7em;
-    width: 0.7em;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    transition: 0.5s;
-    padding: 0.4em;
-}
-
-.dot:hover, .active{
-    background-color: #444;
-}
-
-#dotsel{
-    
 }
 
 a{
@@ -248,31 +234,37 @@ a{
     text-align: center;
     padding-bottom: 0.4em;
     border-bottom: solid #444 2px;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.6em;
 }
  
 label{
     font-size: 1.1em;
-    position: absolute;
+}
+
+.lole{
+    float: left;
 }
 
 input{
-    position: absolute;
-    font-weight: bold;
+    color: black;
     width: 28vw;
     font-size: 1em;
     text-align: center;
     padding: 0.5em;
     border: none;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid #ccc;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     outline: none;
+    margin-bottom: 3vh;
 }
 
 input:focus{
     border-bottom: 2px solid black;
-    width: 30vw;
+}
+
+input[type=text]{
+    padding: 0.2em;
 }
 
 input[type=radio]{
@@ -281,8 +273,10 @@ input[type=radio]{
 }
 
 input[type=submit]{
+    font-weight: bold;
     background-color: white;
-    border: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
     animation-name: reverse;
     animation-duration: 0.5s;
     animation-fill-mode: backwards;
