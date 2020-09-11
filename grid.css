@@ -394,6 +394,7 @@ body{
 
 #im {
     margin: 0;
+    width: 1.2em;
 }
 
 #top{
@@ -418,7 +419,8 @@ body{
 #mobile-logo{
     display: block;
     margin-top: 14%;
-    width: 80%;
+    margin-bottom: 2%;
+    max-width: 85vw;
     height: auto;
 }
 
@@ -472,5 +474,11 @@ input[type="radio"], .hi{
 p{
    max-width: inherit;
 }
+
+img{
+    margin-left: auto;
+    max-width: 70vw;
+}
+
 }
 
