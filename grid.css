@@ -196,8 +196,7 @@ body{
 
 img{
     max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2vh auto 2vh auto;
 }
 
 @keyframes fade{
