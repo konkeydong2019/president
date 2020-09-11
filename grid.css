@@ -133,7 +133,7 @@ body{
     font-weight: bold;
 }
 
-#order{
+.order{
     display: grid;
     justify-content: center;
 }
