@@ -257,6 +257,7 @@ input:focus{
 }
 
 input[type="text"]{
+    background-color: #fcfbfa;
     font-size: 1.1em;
     padding: 0.2em;
 }
@@ -277,7 +278,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    background-color: white;
+    background-color: #fcfbfa;
     border: none;
     animation-fill-mode: forwards;
     animation-name: button;
