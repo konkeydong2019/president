@@ -5,7 +5,7 @@
 }
 
 #site{
-    background-image: linear-gradient(360deg, #C4B49C, #e2d9ce);
+    background-image: linear-gradient(360deg, #e2d9ce, #C4B49C);
     top: 0;
     left: 0;
     position: absolute;
@@ -59,11 +59,11 @@ body{
     padding: 2px;
     border-radius: 5px;
     border: 1px solid #cbc3b9;
-    width: 85%;
+    width: 90%;
     margin: auto;
     margin-top: 3.5vh;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     position: relative;
 }
 	
@@ -144,7 +144,7 @@ body{
     display: grid;
     justify-content: center;
 }
-
+ 
 .menuitem{
     font-weight: bold;
     width: 40vw;
@@ -191,7 +191,7 @@ body{
     cursor: pointer;
 }
 
-img{
+img, iframe{
     max-width: 80%;
     margin: 1.5em auto 1.5em auto;
 }
@@ -239,7 +239,7 @@ label{
 }
 
 
-input{
+input, textarea{
     color: black;
     width: 26vw;
     font-size: 1em;
@@ -283,6 +283,25 @@ input[type="submit"]:hover{
     animation-name: button;
     animation-duration: 0.3s;
     cursor: pointer;
+}
+
+.contact{
+    border-radius: 3px;
+    border: 2px solid #444;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vw;
+    text-align: left;
+}
+
+.contact:focus{
+    border: 2px solid black;
+}
+
+#mes{
+    height: 250px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
 }
 
 select{
@@ -352,14 +371,14 @@ body{
 }
 
 #navbutton{
-    border-radius: 0;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     align-content: start;
     position: static;
     margin: 0;
     height: 120vh;
     background-color: #E2D9CE;
+    border-radius: 0;
     top: 0;
     right: 0;
     border: 0;
