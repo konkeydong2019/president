@@ -16,9 +16,7 @@ function ope() {
 
 function ord(n) {
 
-  var drink = ["Short Black", "Macchiato", "Ristretto", "Long Black", "Americano", "Flat White",
-"Cappuccino", "Latte", "Mochaccino", "Mocha Latte", "Hot Chocolate", "Deluxe Hot Chocolate", 
-"Chai Latte", "Iced Coffee", "Iced Chocolate", "Iced Chai"];
+  var drink = ["Short Black", "Macchiato", "Ristretto", "Long Black", "Americano", "Flat White", "Cappuccino", "Latte", "Mochaccino", "Mocha Latte", "Hot Chocolate", "Deluxe Hot Chocolate", "Chai Latte", "Iced Coffee", "Iced Chocolate", "Iced Chai"];
 
   var x = document.getElementById("order-win");
   var z = document.getElementById("fade");
@@ -33,12 +31,19 @@ function ord(n) {
 	z.style.display = "block";
 	x.style.opacity = "100%";
 	z.style.opacity = "50%";
+  }
+    document.getElementById("zxcv").innerHTML = drink[n];
 
-	document.getElementById("zxcv").innerHTML = drink[n];
-	}
+var m = document.getElementsByClassName("milk")
+  if (n < 5) {
+    m.style.display = "none";
+  } else{
+    m.style.display = "inline-block";
+}
 }
 
 function q(){
 document.getElementById('order-win').style.display = 'none';
 document.getElementById('fade').style.display = 'none';
 }
+

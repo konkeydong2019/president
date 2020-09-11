@@ -15,30 +15,47 @@
 </div>
 
 <div id="order-win">
-<p class="heading" style="border: 0; margin-top: 0;" id="zxcv"></p>
+<p class="heading" style="border: 0; margin-top: 0;" id="zxcv">asdasdfkjdsfjla</p>
 <span id="close" onclick="q()">&#10006;</span>
     <div id="order-form">
     <form>
     <label for="name" class="lole">Your Name: </label>
-    <input type="text" name="name"><br><br>
-    <label for="milk" class="lole">Milk: </label>
-    <input type="radio" id="whole" name="milk"><label for="whole" class="hi">Whole</label>
-    <input type="radio" id="trim" name="milk"><label for="trim" class="hi">Trim</label>
-    <input type="radio" id="soy" name="milk"><label for="soy" class="hi">Soy</label>
-    <input type="radio" id="cashew" name="milk"><label for="cashew" class="hi">Cashew</label>
+    <input type="text" name="na"><br><br>
+    <label for="whole" class="lole milk">Milk: </label>
+    <input type="radio" id="whole" name="milk" class="milk"><label for="whole" class="hi milk">Whole</label>
+    <input type="radio" id="trim" name="milk" class="milk"><label for="trim" class="hi milk">Trim</label>
+    <input type="radio" id="soy" name="milk" class="milk"><label for="soy" class="hi milk">Soy</label>
+    <input type="radio" id="cashew" name="milk" class="milk"><label for="cashew" class="hi milk">Cashew</label>
+    <select id="milk" name="milk">
+	<option>Whole</option>
+	<option>Trim</option>
+	<option>Soy</option>
+	<option>Cashew</option>
+    </select>
     <br><br>
     <label for="small" class="lole">Cup:</label>
     <input type="radio" id="small" name="size"><label for="small" class="hi">Small</label>
     <input type="radio" id="large" name="size"><label for="large" class="hi">Large</label>
     <input type="radio" id="mug" name="size"><label for="mug" class="hi">Mug</label>
     <input type="radio" id="keep" name="size"><label for="keep" class="hi">KeepCup</label>
+    <select id="size" name="size">
+	<option>Small</option>
+	<option>Large</option>
+	<option>Mug</option>
+	<option>KeepCup</option>
+    </select>
     <br><br>
     <label for="none" class="lole">Sugar:</label>
     <input type="radio" id="none" name="sugar"><label for="none" class="hi">None</label>
     <input type="radio" id="one" name="sugar"><label for="one" class="hi">One</label>
     <input type="radio" id="two" name="sugar"><label for="two" class="hi">Two</label>
+    <select id="sugar" name="sugar">
+	<option>None</option>
+	<option>One</option>
+	<option>Two</option>
+    </select>
     <br><br><br>
-    <input type="submit" onclick="">
+    <input type="submit" onclick="b(na, milk, size, sugar)">
     </form>
     </div>
 </div>
