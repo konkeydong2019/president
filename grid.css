@@ -141,7 +141,7 @@ body{
 }
 
 #order-form{
-    height: auto;
+    height: 100%;
     width: 100%;
     display: grid;
     justify-content: center;
@@ -170,14 +170,14 @@ body{
 }
 
 #order-win{
-    top: 25vh;
+    top: 20vh;
     box-shadow: 0px 0px 18px 3px #ccc;
     position: fixed;
     background-color: white;
     padding: 1em;
     border-radius: 5px;
     width: 50%;
-    height: 50vh;
+    height: 6   0vh;
     z-index: 5;
     display: none;
     opacity: 0;
@@ -263,16 +263,16 @@ input:focus{
     border-bottom: 2px solid black;
 }
 
-input[type=text]{
+input[type="text"]{
     padding: 0.2em;
 }
 
-input[type=radio]{
+input[type="radio"]{
     padding: 0.5em;
     width: 1em;
 }
 
-input[type=submit]{
+input[type="submit"]{
     font-weight: bold;
     background-color: white;
     border-radius: 5px;
@@ -282,7 +282,7 @@ input[type=submit]{
     animation-fill-mode: backwards;
 }
 
-input[type=submit]:hover{
+input[type="submit"]:hover{
     background-color: white;
     border: none;
     animation-fill-mode: forwards;
